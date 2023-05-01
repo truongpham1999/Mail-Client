@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    mail_received
+{% endblock %}
+
+{% block main %}
+    <div>
+        {% for email in emails %}
+        <div class="list-group-item">
+            <div>
+                <p><strong>From:</strong> {{ email["sender"] }} </p>
+            </div>
+            <div>
+                <p>{{ email["subject"] }}</p>
+            </div>
+            <div>
+                <p>{{ email["timestamp"] }}</p>
+            </div>
+            <div>
+                <form action="received_email_viewing" method="post">
+                    <input type="hidden" name="email_id" value="{{ email["id"] }}">
+                    <input class="btn btn-info" type="submit" value="Read Email">
+                </form>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

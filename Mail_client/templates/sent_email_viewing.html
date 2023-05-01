@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    sent_email_viewing
+{% endblock %}
+
+{% block main %}
+    <div class="container container-view">
+        <div class="row">
+            <div class="col-12">
+                <div class="list-group-item">
+                    <p><strong>To:</strong> {{ email_details["recipient"] }} </p>
+                </div>
+                <div class="list-group-item">
+                    <p><strong>Subject:</strong> {{ email_details["subject"] }} </p>
+                </div>
+                <div class="list-group-item mb-3">
+                    <p><strong>Time:</strong> {{ email_details["timestamp"] }} </p>
+                </div>
+                <div class="mb-3 form-control viewing-body">
+                    <p>{{ email_details["body"] }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

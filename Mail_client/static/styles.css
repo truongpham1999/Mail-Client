@@ -1,0 +1,100 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+/* Styles for screens up to 480px */
+@media only screen and (max-width: 480px) {
+    .compose-input {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .compose-body {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  /* Styles for screens between 481px and 768px */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .compose-input {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .compose-body {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  /* Styles for screens between 769px and 992px */
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    .compose-input {
+      width: 40%;
+      margin: 0 auto;
+    }
+
+    .compose-body {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  /* Styles for screens larger than 992px */
+  @media only screen and (min-width: 993px) {
+    .compose-input {
+      width: 25%;
+    }
+
+    .compose-body {
+      width: 60%;
+    }
+  }
+
+.list-group-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.viewing-body {
+    resize: both;
+    overflow: auto;
+    max-width: 100%;
+    text-align: left;
+}
+
+.reply-btn {
+    margin-top: 215px;
+}
+
+.container-view {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+
